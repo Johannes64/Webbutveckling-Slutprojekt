@@ -36,7 +36,13 @@
     border: 2px solid black;
     border-radius: 5px;
   }
-  img {
+  .logo-background
+  {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+  }
+  .logoimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -48,7 +54,8 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(51, 51, 51, 0.9);
+    border-radius: 5px;
   }
   
   li {
@@ -65,4 +72,23 @@
 
   li a:hover {
     background-color: #111;
+  }
+  p
+  {
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  body
+  {
+    margin: 0px;
+  }
+  .col-12
+  {
+    padding-top: 0;
+  }
+  .text-background
+  {
+    background-color: rgb(240, 255, 255, 0.9);
+    padding: 25px;
   }
