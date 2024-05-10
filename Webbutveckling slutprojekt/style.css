@@ -17,6 +17,7 @@
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
   .col-4 {width: 33.33%;}
+  .col-4-1 {width: 37.50%;}
   .col-5 {width: 41.66%;}
   .col-6 {width: 50%;}
   .col-7 {width: 58.33%;}
@@ -42,37 +43,53 @@
     padding: 0;
     margin: 0;
   }
-  .logoimg {
+  .logoimg 
+  {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
   }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(51, 51, 51, 0.9);
-    border-radius: 5px;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
+
+
+.navbar 
+{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(51, 51, 51, 0.9);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-nav 
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-nav li 
+{
+  display: inline;
+  margin-right: 20px;
+}
+
+.main-nav li:last-child 
+{
+  margin-right: 0;
+}
+
+
+   .main-nav li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
 
-  li a:hover {
+  .main-nav li a:hover {
     background-color: #111;
   }
+
   p
   {
     margin-top: 0px;
@@ -91,4 +108,15 @@
   {
     background-color: rgb(240, 255, 255, 0.9);
     padding: 25px;
+  }
+  .form
+  {
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .form form
+  {
+    margin-left: 5px;
   }
