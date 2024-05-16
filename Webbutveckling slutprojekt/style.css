@@ -113,6 +113,15 @@
     padding: 25px;
     border-radius: 5px;
   }
+  .text-background-1
+  {
+    background-color: rgb(240, 255, 255, 0.9);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+  }
   .form
   {
     background-color: aliceblue;
@@ -141,7 +150,7 @@
     left: 10px;
     z-index: 1001;
     cursor: pointer;
-    color: lightgreen;
+    color: lightgray;
 }
 
 .menu-toggle:checked ~ .row .navbar .main-nav {
