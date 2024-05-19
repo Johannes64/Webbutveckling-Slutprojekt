@@ -1,205 +1,213 @@
+/* Tillämpa Montserrat-teckensnittet på alla element och ställ in boxstorlek till border-box för konsestant storlek*/
 * {
-    box-sizing: border-box;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  [class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-  
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-4-1 {width: 37.50%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-  
-  .logo 
-  {
-    background-color: black;
-    width:128px;
-    height:128px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid black;
-    border-radius: 5px;
-  }
-  .logo-background
-  {
-    background-color: black;
-    padding: 0;
-    margin: 0;
-  }
-  .logoimg 
-  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Clearfix för klassen .row för att hantera flytande element */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Generisk kolumnklass för foating och padding*/
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+/* Bredddefinitioner för olika kolumnstorlekar */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-4-1 {width: 37.50%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*style för logga*/
+.logo 
+{
+  background-color: black;
+  width:128px;
+  height:128px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.logo-background
+{
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+.logoimg 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
-
+/*style för navbar*/
 .navbar 
 {
-  position: static;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(51, 51, 51, 0.9);
-  border-radius: 5px;
-  overflow: hidden;
+position: static;
+display: flex;
+justify-content: center;
+background-color: rgb(51, 51, 51, 0.9);
+border-radius: 5px;
+overflow: hidden;
 }
 
 .main-nav 
 {
-  list-style-type: none;
-  padding: 0;
+list-style-type: none;
+padding: 0;
 }
 
 .main-nav li 
 {
-  display: inline;
-  margin-right: 20px;
+display: inline;
+margin-right: 20px;
 }
 
-.main-nav li:last-child 
+ .main-nav li a 
 {
-  margin-right: 0;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-
-   .main-nav li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  .main-nav li a:hover {
-    background-color: #111;
-    border-radius: 5px;
-    padding: 5px;
-  }
-
-  p
-  {
-    margin-top: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  body
-  {
-    margin: 0px;
-  }
-  .col-12
-  {
-    padding-top: 0;
-  }
-  .text-background
-  {
-    background-color: rgb(240, 255, 255, 0.9);
-    padding: 25px;
-    border-radius: 5px;
-  }
-  .text-background-1
-  {
-    background-color: rgb(240, 255, 255, 0.9);
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 25px;
-    padding-bottom: 7px;
-    border-radius: 5px;
-  }
-  .form
-  {
-    background-color: aliceblue;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .form form
-  {
-    margin-left: 5px;
-  }
-  .karta
-  {
-    padding-left: 10%;
-  }
-
-  .menu-toggle {
-    display: none;
+.main-nav li a:hover 
+{
+  background-color: #111;
+  border-radius: 5px;
+  padding: 5px;
 }
 
+p
+{
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+body
+{
+  margin: 0px;
+}
+.col-12
+{
+  padding-top: 0;
+}
+.text-background
+{
+  background-color: rgb(240, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 5px;
+}
+.text-background-1
+{
+  background-color: rgb(240, 255, 255, 0.9);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+}
+.form
+{
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.form form
+{
+  margin-left: 5px;
+}
+.karta
+{
+  padding-left: 10%;
+}
+/*gömmer "hamburgar" menyn för större skärmar*/
+.menu-toggle {
+  display: none;
+}
 
+/*style för "hamburgar" menyn*/
 .menu-toggle-label {
-    display: none;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1001;
-    cursor: pointer;
-    color: lightgray;
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+  cursor: pointer;
+  color: lightgray;
 }
-
+/*vissa navbaren när man har tryckt på hamburgar iconen*/
 .menu-toggle:checked ~ .row .navbar .main-nav {
-    display: block;
+  display: block;
 }
-
-  @media screen and (max-width: 768px) {
-    [class*="col-"]
-    {
-        width: 100%;
-        padding: 5px;
-    }
-    [iframe]
-    {
+/* Responsiv styling för skärmar mindre än 768px */
+@media screen and (max-width: 768px) {
+  /*gör kolumner att ta full bred av skärmen*/
+  [class*="col-"]
+  {
       width: 100%;
-    }
-
-
-    img
-    {
-      width: 100%;
-    }
-    .navbar
-    {
-      position: fixed;
-      top: 128px;
-      left: 0;
-      width: 25%;
-      z-index: 1000;
-    }
-    .navbar .main-nav {
-      display: none;
+      padding: 5px;
   }
-  .menu-toggle:checked ~ .row .navbar .main-nav {
-      display: flex;
-  }
-  .navbar .main-nav {
-      flex-direction: column;
-  }
-  .navbar .main-nav li {
-      display: block;
-      margin-bottom: 10px;
-  }
-  .menu-toggle-label {
-    content: '\2630';
-    font-size: 24px;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+  [iframe]
+  {
+    width: 100%;
   }
 
+
+  img
+  {
+    width: 100%;
   }
+  /*justera navbarens position och bredd på mindre skärmar */
+  .navbar
+  {
+    position: fixed;
+    top: 128px;
+    left: 0;
+    width: 25%;
+    z-index: 1000;
+  }
+  /*gömmer först navbaren för mindre skärmar*/
+  .navbar .main-nav 
+  {
+    display: none;
+  }
+  /*vissar navbaren när man har tryckt på iconen*/
+  .menu-toggle:checked ~ .row .navbar .main-nav 
+  {
+    display: flex;
+  }
+  .navbar .main-nav 
+  {
+    flex-direction: column;
+  }
+  .navbar .main-nav li 
+  {
+    display: block;
+    margin-bottom: 10px;
+  }
+  /*vissar hamburgar iconen för mindre skärmar*/
+  .menu-toggle-label 
+  {
+  content: '\2630';
+  font-size: 24px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  }
+
+}
