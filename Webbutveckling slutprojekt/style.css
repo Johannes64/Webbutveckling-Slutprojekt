@@ -120,6 +120,32 @@ body
   padding-bottom: 7px;
   border-radius: 5px;
 }
+/* flexbox container för bilder och text på About sidan */
+.text-image
+{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.text-image img 
+{
+  max-width: 30%;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+/* style för bilden till höger på About sidan */
+.text-image img.right
+{
+  order: 2;
+  margin-left: 5%;
+  margin-right: 0;
+}
+/*max width på content inuti text-image*/
+.text-image .text-content
+{
+  max-width: 80%;
+}
 .form
 {
   background-color: aliceblue;
@@ -208,6 +234,29 @@ body
   display: inline-block;
   width: 24px;
   height: 24px;
+  }
+  /*ändrar layouten för mindre skärmar till column*/
+  .text-image
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-image img 
+  {
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .text-image img.right 
+  {
+    order: 0;
+    margin-left: 1%;
+  }
+
+  .text-image .text-content
+  {
+    max-width: 100%;
   }
 
 }
